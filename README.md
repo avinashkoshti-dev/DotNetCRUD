@@ -30,10 +30,8 @@
                           .AllowCredentials();
                       });
     });
-
 - add this line to below app.UserHttpRedirection
     app.UseCors(MyAllowSpecificOrigins);
-
 
 **Fetch API**
 **Get Request**
