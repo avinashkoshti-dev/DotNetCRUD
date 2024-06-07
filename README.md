@@ -32,3 +32,32 @@
 
 - add this line to below app.UserHttpRedirection
     app.UseCors(MyAllowSpecificOrigins);
+
+
+**Fetch API**
+**Get Request**
+let response = await fetch("https://localhost:7111/api/Emp/getallemployee")
+    if (response.ok) {
+        let employees = await response.json();        
+    }
+
+  **POST Request**
+// Make a POST request using the Fetch API
+fetch('https://localhost:7111/api/Emp/createemployee', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(obj)
+    })
+        .then(res => res.json())
+        .then(data => {           
+        })
+**Delete Request**
+fetch('https://localhost:7111/api/Emp/deleteemployee/' + id, {
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+            })
+  
