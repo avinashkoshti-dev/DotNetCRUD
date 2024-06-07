@@ -52,6 +52,7 @@ fetch('https://localhost:7111/api/Emp/createemployee', {
         .then(res => res.json())
         .then(data => {           
         })
+	
 **Delete Request**
 fetch('https://localhost:7111/api/Emp/deleteemployee/' + id, {
             method: 'DELETE',
