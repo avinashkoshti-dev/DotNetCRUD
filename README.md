@@ -1,4 +1,5 @@
 # Steps 
+<code>
 1. Create Database <Database Name>
 2. Add Tabel to created database
 3. Add packages to api project microsoft.entityframeworkcore.
@@ -61,3 +62,4 @@ fetch('https://localhost:7111/api/Emp/deleteemployee/' + id, {
             .then(data => {
             })
   
+</code>
